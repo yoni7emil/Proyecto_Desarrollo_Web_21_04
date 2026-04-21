@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camacho Motriz | Taller Mecánico</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="bi bi-gear-wide-connected"></i> CAMACHO MOTRIZ
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#trabajos">Galería</a></li>
+                    <li><a href="index.html#turno">Pedir Turno</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="fondoimg">
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <h1>Mecánica de Precisión en Posadas</h1>
+                    <p>Especialistas en inyección electrónica y mantenimiento preventivo.</p>
+                    <img src="img2/t1.png" alt="Taller mecánico profesional" class="hero-img">
+                </div>
+            </section>
+
+            <section id="servicios" class="cards-section">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="cards-container">
+                <a href="DDigital.html">
+                    <article class="card">
+                        <img src="img2/inyeccion.png" alt="Scanner automotriz">
+                        <h3>Diagnóstico Digital</h3>
+                        <p>Detectamos fallas complejas con tecnología de última generación.</p>
+                        <button class="btn-card">Saber más</button>
+                    </article>
+                </a>
+                <a href="DFrenos.html">
+                    <article class="card">
+                        <img src="img2/freno.png" alt="Mantenimiento de frenos">
+                        <h3>Frenos y Suspensión</h3>
+                        <p>Seguridad garantizada con repuestos originales y revisión integral.</p>
+                        <button class="btn-card">Saber más</button>
+                    </article>
+                </a>
+                </div>
+            </section>
+
+            <section id="trabajos" class="gallery-section">
+                <h2 class="section-title">Trabajos Realizados</h2>
+                <div class="gallery-grid">
+                    <img src="img2/t8.png" alt="motor">
+                    <img src="img2/t2.png" alt="aceite">
+                    <img src="img2/t3.png" alt="Alineación">
+                    <img src="img2/t4.png" alt="inyectores">
+                    <img src="img2/t5.png" alt="Repuesto">
+                    <img src="img2/t6.png" alt="Taller">
+                    <img src="img2/t7.png" alt="Elevador">
+                </div>
+            </section>
+
+            <section id="turno" class="contact-section">
+                <h2 class="section-title">Solicitá tu Turno</h2>
+                <form action="#" class="contact-form">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+
+                    <label for="tel">Teléfono de contacto:</label>
+                    <input type="tel" id="tel" name="tel" required placeholder="3764-XXXXXX">
+
+                    <label for="servicio-select">Tipo de Servicio:</label>
+                    <select id="servicio-select" name="servicio">
+                        <option value="mantenimiento">Mantenimiento General</option>
+                        <option value="frenos">Frenos / Suspensión</option>
+                        <option value="electronica">Inyección Electrónica</option>
+                    </select>
+
+                    <div class="radio-group">
+                        <p>¿Es tu primera visita?</p>
+                        <input type="radio" id="si" name="primera-vez" value="si">
+                        <label for="si">Sí</label>
+                        <input type="radio" id="no" name="primera-vez" value="no">
+                        <label for="no">No</label>
+                    </div>
+
+                    <label for="mensaje">Detalles de la falla:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describí brevemente el problema..."></textarea>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">Enviar Turno</button>
+                        <button type="reset" class="btn-reset">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer" >
+            <p>&copy; 2026 Camacho Motriz - Posadas, Misiones.</p>
+            <div class="social-icons">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-whatsapp"></i>
+            </div>
+        </footer>
+</body>
+</html>
